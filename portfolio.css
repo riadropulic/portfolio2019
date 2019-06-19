@@ -1,0 +1,881 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 100;
+}
+
+/* ------------------------MOBILE VERSION-------------------------*/
+
+.indexwrap {
+  display: grid;
+  grid-template-rows: 0.5fr 5fr 0.5fr;
+  grid-template-areas:
+    "top"
+    "nav"
+    "footer";
+}
+
+.logo img {
+  width: 7em;
+}
+
+.logo {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 1em;
+}
+
+.top {
+  border-bottom: 0.5px solid #a6a5a5;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.nav {
+  background-color: #eaf2f3;
+  font-size: 40px;
+  text-align: center;
+  padding-top: 13vw;
+  padding-bottom: 6vw;
+  margin-top: 12vh;
+  margin-bottom: 17vw;
+}
+
+.nav a {
+  color: #a6a5a5;
+}
+
+.nav div {
+  padding-bottom: 2em;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: solid 0.5px#A6A5A5;
+  padding-top: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  grid-area: footer;
+}
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+/* ~~~~~~~~~ mobile PROJECTS~~~~~~~~~~*/
+.projectsnav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 0.5px solid #a6a5a5;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  font-size: 18px;
+}
+
+.des {
+  font-size: 20px;
+  text-align: center;
+  padding-top: 3vh;
+  margin-left: 12vw;
+  margin-right: 12vw;
+  padding-bottom: 0.5em;
+  border-bottom: 0.5px solid #a6a5a5;
+}
+
+.blue {
+  width: 100%;
+  height: 54vh;
+  background-color: #d5e5e8;
+  opacity: 0.5;
+  margin-top: 5em;
+  margin-bottom: 3em;
+  position: relative;
+}
+
+.grey {
+  width: 100%;
+  height: 23vh;
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 59vh;
+}
+
+.buttons {
+  position: absolute;
+  top: 62vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 3em;
+  text-align: center;
+}
+
+.buttons button {
+  background-color: #fff;
+  font-size: 20px;
+  border: none;
+  border-radius: 1em;
+  height: 17vh;
+  width: 17vh;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/* ~~~~~~~~~basic web design~~~~~~~~~~*/
+
+.basic_web {
+  display: grid;
+  grid-template-rows: 0.5fr 5.5fr 1fr 0.5fr;
+  grid-template-areas:
+    "mobilenav"
+    "cont"
+    "arrowB"
+    "footer";
+  display: none;
+}
+
+.webnav {
+  display: none;
+}
+
+.mobilenav {
+  grid-area: mobilenav;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 0.5px solid #a6a5a5;
+  text-align: center;
+  margin-left: 1em;
+  margin-right: 1em;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  font-size: 18px;
+}
+
+.content {
+  grid-area: cont;
+}
+
+.heading {
+  padding-top: 1em;
+  margin-left: 1em;
+}
+.grey1,
+.grey2,
+.grey3,
+.grey4 {
+  background-color: #f8f8f8;
+  position: relative;
+  width: 78%;
+  height: 40vh;
+  left: 21vw;
+  top: 1.5em;
+}
+
+.blue1,
+.blue2,
+.blue3,
+.blue4 {
+  background-color: #d5e5e8;
+  position: absolute;
+  width: 80%;
+  height: 64vh;
+  top: 10em;
+  left: 10vw;
+  opacity: 0.5;
+  font-size: 18px;
+}
+
+.t {
+  overflow: scroll;
+  height: 50vh;
+}
+
+.blue1 p,
+.blue2 p,
+.blue3 p,
+.blue4 p {
+  text-align: center;
+  padding: 3vh 10vw 0vh 10vw;
+}
+
+.webB,
+.animB {
+  position: absolute;
+  top: 78vh;
+  left: 4vw;
+}
+
+.webB button,
+.animB button {
+  background-color: #fff;
+  border: none;
+  border-radius: 1.5em;
+  font-size: 17px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 8vh;
+  width: 55vw;
+}
+
+.arrowB {
+  grid-area: arrowB;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  margin-right: 2em;
+}
+
+.arrowB,
+.arrowB2,
+.arrowB3,
+.arrowB4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 2em;
+}
+
+.arrowB button,
+.arrowB3 button,
+.arrowB4 button {
+  border: #ecf3f4 2px solid;
+  border-radius: 1.5em;
+  font-size: 13px;
+  width: 10em;
+  text-align: center;
+}
+
+.fas {
+  padding-right: 1em;
+  padding-left: 0.3em;
+}
+
+/* ~~~~~~~~~ mobile basic animation~~~~~~~~~~*/
+
+.basic_animation {
+  display: grid;
+  grid-template-rows: 0.5fr 5.5fr 0.5fr 0.5fr;
+  grid-template-areas:
+    "mobilenav"
+    "cont2"
+    "arrowB2"
+    "footer";
+  display: none;
+}
+
+.animnav {
+  display: none;
+}
+
+.content2 {
+  grid-area: cont2;
+}
+
+.arrowB2 {
+  grid-area: arrowB2;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  margin-right: 2em;
+}
+
+.arrowB2 button {
+  background-color: #fff;
+  border: #ecf3f4 2px solid;
+  border-radius: 1.5em;
+  font-size: 13px;
+  text-align: center;
+}
+/* ~~~~~~~~~ mobile basic content~~~~~~~~~~*/
+
+.basic_content {
+  display: grid;
+  grid-template-rows: 0.5fr 8fr 0.5fr 0.5fr;
+  grid-template-areas:
+    "mobilenav"
+    "cont3"
+    "arrowB3"
+    "footer";
+  display: none;
+}
+
+.contnav {
+  display: none;
+}
+.t1 {
+  overflow: scroll;
+  height: 35vh;
+}
+
+.contB {
+  position: absolute;
+  top: 63vh;
+  left: 4vw;
+}
+.contB button {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+  border: none;
+  border-radius: 1.5em;
+  font-size: 17px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 6vh;
+}
+
+.arrowB3 {
+  grid-area: arrowB3;
+}
+
+.arrowB3 button {
+  background-color: #fff;
+}
+
+/* ~~~~~~~~~basic ux~~~~~~~~~~*/
+
+.basic_ux {
+  display: grid;
+  grid-template-rows: 0.5fr 8fr 0.5fr 0.5fr;
+  grid-template-areas:
+    "mobilenav"
+    "cont4"
+    "arrowB4"
+    "footer";
+  display: none;
+}
+
+.uxnav {
+  display: none;
+}
+
+.content4 {
+  grid-area: cont4;
+}
+
+.uxB {
+  position: absolute;
+  top: 63vh;
+  left: 6vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+}
+.uxB button {
+  background-color: #fff;
+  border: none;
+  margin-bottom: 1em;
+  border-radius: 1.5em;
+  font-size: 15px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 12em;
+}
+
+.arrowB4 {
+  grid-area: arrowB4;
+  margin-bottom: 2em;
+  margin-right: 2em;
+}
+
+.arrowB4 button {
+  background-color: #fff;
+}
+
+/* ~~~~~~~~~ mobile ABOUT ME~~~~~~~~~~*/
+.aboutcont {
+  grid-area: aboutcont;
+}
+.grey5 {
+  background-color: #f8f8f8;
+  position: relative;
+  width: 98%;
+  top: 4em;
+  left: 0.5em;
+}
+.grey5 p {
+  padding: 3vh 4vw 5vh 4vw;
+  font-size: 17px;
+  text-align: center;
+}
+
+.grey5 p:first-child {
+  padding-top: 3em;
+}
+
+.blue5 {
+  background-color: #d5e5e8;
+  position: relative;
+  width: 98%;
+  height: 33em;
+  top: 3em;
+  left: 0.5em;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.me img {
+  width: 20em;
+  padding-top: 2em;
+  position: absolute;
+  top: 45.5em;
+  left: 3em;
+}
+
+.aboutwrap .footer {
+  position: absolute;
+  top: 79em;
+  width: 100%;
+  margin-left: 0.5em;
+  margin-top: 1em;
+  padding-bottom: 3em;
+}
+
+@media all and (min-width: 700px) {
+  /* ----------------------DESKTOP VERSION-----------------------*/
+  .heading {
+    display: none;
+  }
+
+  .t,
+  .t1 {
+    overflow: unset;
+  }
+
+  .mobilenav {
+    display: none;
+  }
+  /* ~~~~~~~~~HOMEPAGE~~~~~~~~~~*/
+  .logo {
+    display: none;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 70px;
+    padding-top: 8vw;
+    padding-bottom: 8vw;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+  }
+
+  .indexwrap .footer {
+    margin-top: 6em;
+  }
+
+  /* .aboutme was overwiting text align*/
+  #c {
+    text-align: center;
+  }
+
+  .nav div {
+    padding-bottom: 0;
+  }
+
+  .left {
+    margin-left: 2em;
+  }
+
+  .right {
+    margin-right: 2em;
+  }
+
+  /* ~~~~~~~~~PROJECTS~~~~~~~~~~*/
+
+  .projectsnav {
+    grid-template-columns: 4fr 1fr 1fr;
+    margin-left: 2em;
+    margin-right: 2em;
+    font-size: 28px;
+  }
+
+  .projectsnav .home,
+  .aboutme {
+    text-align: right;
+  }
+
+  .des {
+    font-size: 23px;
+    text-align: center;
+    padding-top: 8vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+  }
+
+  .container {
+    margin-bottom: 5em;
+  }
+
+  .blue {
+    height: 40vh;
+    margin-top: 5em;
+  }
+
+  .grey {
+    width: 94%;
+    height: 20vh;
+    top: 48vh;
+    left: 3vw;
+  }
+
+  .buttons {
+    top: 52vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .buttons button {
+    font-size: 38px;
+    height: 24vh;
+    width: 24vh;
+  }
+
+  /* ~~~~~~~~~basic web design~~~~~~~~~~*/
+  .basic_web {
+    display: grid;
+    grid-template-rows: 0.5fr 6fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "webnav"
+      "cont"
+      "arrowB"
+      "footer";
+    display: none;
+  }
+
+  .mobilenav {
+    display: none;
+  }
+  .webnav {
+    grid-area: webnav;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    border-bottom: 0.5px solid #a6a5a5;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 25px;
+  }
+
+  .webnav .home,
+  .aboutme,
+  .projectsw {
+    text-align: right;
+  }
+
+  .grey1 {
+    width: 80%;
+    height: 50vh;
+    left: 10vw;
+    top: 10em;
+  }
+
+  .blue1 {
+    height: 44vh;
+    top: 11em;
+    left: 20vw;
+    font-size: 20px;
+  }
+
+  .blue1 p {
+    padding: 9vh 12vw 0vh 12vw;
+  }
+
+  .webB {
+    top: 50vh;
+    left: 6vw;
+  }
+
+  .webB button {
+    font-size: 25px;
+    width: 25vw;
+  }
+
+  .arrowB,
+  .arrowB2,
+  .arrowB3,
+  .arrowB4 {
+    padding-left: 2.5em;
+  }
+
+  .arrowB button,
+  .arrowB2 button,
+  .arrowB3 button,
+  .arrowB4 button {
+    font-size: 20px;
+    width: 14em;
+  }
+
+  .fas {
+    padding-right: 1em;
+  }
+
+  /* ~~~~~~~~~basic animation~~~~~~~~~~*/
+
+  .basic_animation {
+    grid-template-rows: 0.5fr 7fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "animnav"
+      "cont2"
+      "arrowB2"
+      "footer";
+  }
+
+  .animnav {
+    grid-area: animnav;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    border-bottom: 0.5px solid #a6a5a5;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 25px;
+    text-align: right;
+  }
+
+  .basanim {
+    text-align: left;
+  }
+
+  .content2 {
+    grid-area: cont2;
+  }
+
+  .grey2 {
+    width: 80%;
+    height: 55vh;
+    left: 11vw;
+    top: 11em;
+  }
+
+  .blue2 {
+    width: 80%;
+    height: 47vh;
+    top: 11em;
+    left: 0;
+    font-size: 20px;
+  }
+
+  .blue2 p {
+    padding: 7vh 9vw 0vh 13vw;
+  }
+
+  .animB {
+    position: absolute;
+    top: 57vh;
+    left: 72vw;
+  }
+  .animB button {
+    border: none;
+    border-radius: 1.5em;
+    font-size: 25px;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 8vh;
+    width: 23vw;
+  }
+
+  /* ~~~~~~~~~basic content~~~~~~~~~~*/
+
+  .basic_content {
+    display: grid;
+    grid-template-rows: 0.5fr 7fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "contnav"
+      "cont3"
+      "arrowB3"
+      "footer";
+    display: none;
+  }
+
+  .contnav,
+  .uxnav {
+    grid-area: contnav;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    border-bottom: 0.5px solid #a6a5a5;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    font-size: 25px;
+    text-align: right;
+  }
+
+  .grey3 {
+    background-color: #f8f8f8;
+    position: relative;
+    width: 80%;
+    height: 50vh;
+    left: 20vw;
+    top: 8em;
+  }
+
+  .blue3 {
+    background-color: #d5e5e8;
+    position: absolute;
+    width: 80%;
+    height: 50vh;
+    top: 15em;
+    left: 10vw;
+    opacity: 0.5;
+    font-size: 20px;
+  }
+
+  .blue3 p {
+    padding: 4vh 7vw 0vh 22vw;
+    text-align: center;
+  }
+
+  .contB {
+    position: absolute;
+    top: 39vh;
+    left: 4vw;
+  }
+  .contB button {
+    margin-bottom: 2em;
+    font-size: 25px;
+    height: 8vh;
+    width: 25vw;
+  }
+
+  /* ~~~~~~~~~basic ux~~~~~~~~~~*/
+
+  .basic_ux {
+    display: grid;
+    grid-template-rows: 0.5fr 7fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "uxnav"
+      "cont4"
+      "arrowB4"
+      "footer";
+    display: none;
+  }
+
+  .uxnav {
+    grid-area: uxnav;
+  }
+
+  .content4 {
+    grid-area: cont4;
+  }
+
+  .grey4 {
+    background-color: #f8f8f8;
+    position: relative;
+    width: 80%;
+    left: 0;
+    height: 50vh;
+    top: 8em;
+  }
+
+  .blue4 {
+    background-color: #d5e5e8;
+    position: absolute;
+    width: 80%;
+    height: 50vh;
+    top: 15em;
+    left: 10vw;
+    opacity: 0.5;
+    font-size: 20px;
+  }
+
+  .blue4 p {
+    padding: 4vh 19vw 0vh 2vw;
+    text-align: center;
+  }
+  .uxB {
+    position: absolute;
+    top: 37vh;
+    left: 74vw;
+    display: block;
+  }
+  .uxB button {
+    border: none;
+    margin-bottom: 1em;
+    border-radius: 1.5em;
+    font-size: 25px;
+    font-family: "Helvetica Neue", sans-serif;
+    font-weight: 100;
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 8vh;
+    width: 23vw;
+  }
+
+  /* ~~~~~~~~~ABOUT ME~~~~~~~~~~*/
+
+  .grey5 {
+    width: 80%;
+    height: 50vh;
+    top: 6em;
+  }
+
+  .grey5 p {
+    padding: 3vh 20vw 5vh 4vw;
+    font-size: 17px;
+    text-align: center;
+  }
+
+  /* code borrowed from https://www.steckinsights.com/shorten-length-border-bottom-pure-css/ */
+
+  .grey5:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    width: 70%; /* Change this to whatever width you want. */
+    padding-bottom: 14vh; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid #a6a5a5; /* This creates the border. Replace black with whatever color you want. */
+    margin-left: 3vw;
+  }
+
+  .blue5 {
+    position: absolute;
+    width: 27em;
+    height: 33em;
+    top: 18em;
+    left: 64vw;
+    z-index: 1;
+  }
+
+  .me img {
+    width: 19em;
+    padding-top: 2em;
+    left: 68vw;
+    top: 18.2em;
+    z-index: 10;
+  }
+
+  .aboutwrap .footer {
+    top: 57em;
+    width: 96%;
+  }
+}
